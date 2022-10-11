@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1041.5384615384614" y="819.66824644549763"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchTab-->
         <scene sceneID="u8n-X4-0r0">
             <objects>
-                <viewController id="cbu-VX-nQz" sceneMemberID="viewController">
+                <viewController id="cbu-VX-nQz" userLabel="SearchTab" customClass="SearchTab" customModule="IKEA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="igJ-J1-Jps">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,8 +134,52 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYG-fg-z8g" userLabel="SearchBarView">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="200"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jME-cb-Sbl">
+                                                        <rect key="frame" x="30.000000000000004" y="30" width="38.333333333333343" height="26.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" id="lc7-6j-5FN" userLabel="SearchBar">
+                                                        <rect key="frame" x="30" y="81.333333333333329" width="330" height="47.999999999999986"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="rs6-Sf-whe">
+                                                                <rect key="frame" x="20" y="13.000000000000011" width="20.333333333333329" height="22.333333333333329"/>
+                                                                <imageReference key="image" image="magnifyingglass" catalog="system" renderingMode="hierarchical-single">
+                                                                    <hierarchicalColors>
+                                                                        <color systemColor="systemGrayColor"/>
+                                                                        <color systemColor="secondaryLabelColor"/>
+                                                                        <color systemColor="tertiaryLabelColor"/>
+                                                                    </hierarchicalColors>
+                                                                </imageReference>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무엇을 찾고있나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S1-fi-RH5">
+                                                                <rect key="frame" x="52.333333333333343" y="12.000000000000014" width="277.66666666666663" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="0S1-fi-RH5" secondAttribute="trailing" id="ACf-RI-kVp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="0S1-fi-RH5" secondAttribute="bottom" constant="12" id="C5y-Ch-iBK"/>
+                                                            <constraint firstAttribute="bottom" secondItem="rs6-Sf-whe" secondAttribute="bottom" constant="12" id="Vne-oK-KKF"/>
+                                                            <constraint firstItem="0S1-fi-RH5" firstAttribute="leading" secondItem="rs6-Sf-whe" secondAttribute="trailing" constant="12" id="WaQ-tf-izN"/>
+                                                            <constraint firstItem="rs6-Sf-whe" firstAttribute="leading" secondItem="lc7-6j-5FN" secondAttribute="leading" constant="20" id="ZJM-cc-mR4"/>
+                                                            <constraint firstItem="rs6-Sf-whe" firstAttribute="top" secondItem="lc7-6j-5FN" secondAttribute="top" constant="12" id="lIx-9X-8xf"/>
+                                                            <constraint firstItem="0S1-fi-RH5" firstAttribute="top" secondItem="lc7-6j-5FN" secondAttribute="top" constant="12" id="vYp-jX-XgK"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="jME-cb-Sbl" firstAttribute="top" secondItem="uYG-fg-z8g" secondAttribute="top" constant="30" id="3dQ-Bw-8q8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lc7-6j-5FN" secondAttribute="trailing" constant="30" id="8dU-lb-GJm"/>
+                                                    <constraint firstItem="lc7-6j-5FN" firstAttribute="top" secondItem="jME-cb-Sbl" secondAttribute="bottom" constant="25" id="KAK-Hc-eEz"/>
+                                                    <constraint firstItem="lc7-6j-5FN" firstAttribute="leading" secondItem="uYG-fg-z8g" secondAttribute="leading" constant="30" id="VI2-UD-hqF"/>
+                                                    <constraint firstItem="jME-cb-Sbl" firstAttribute="leading" secondItem="uYG-fg-z8g" secondAttribute="leading" constant="30" id="bwP-vT-YYk"/>
                                                     <constraint firstAttribute="height" constant="200" id="eq8-gR-xgS"/>
                                                 </constraints>
                                             </view>
@@ -213,6 +257,9 @@
                             </hierarchicalColors>
                         </imageReference>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="searchBar" destination="lc7-6j-5FN" id="blB-za-X46"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHN-kD-ndy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,6 +457,7 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="tabBarColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -423,11 +471,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
