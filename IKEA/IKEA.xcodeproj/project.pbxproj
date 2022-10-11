@@ -59,15 +59,79 @@
 		6644D77328E9819200DC6371 /* IKEA */ = {
 			isa = PBXGroup;
 			children = (
-				6644D77428E9819200DC6371 /* AppDelegate.swift */,
-				6644D77628E9819200DC6371 /* SceneDelegate.swift */,
+				66E1E81028F3FCF800B1D57B /* Screen */,
+				66E1E80B28F3FC8200B1D57B /* Global */,
 				6644D77828E9819200DC6371 /* ViewController.swift */,
-				6644D77A28E9819200DC6371 /* Main.storyboard */,
-				6644D77D28E9819300DC6371 /* Assets.xcassets */,
-				6644D77F28E9819300DC6371 /* LaunchScreen.storyboard */,
 				6644D78228E9819300DC6371 /* Info.plist */,
 			);
 			path = IKEA;
+			sourceTree = "<group>";
+		};
+		66E1E80B28F3FC8200B1D57B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				66E1E80E28F3FCB700B1D57B /* Resource */,
+				66E1E80D28F3FCAF00B1D57B /* Extension */,
+				66E1E80C28F3FC8A00B1D57B /* SupportingFiles */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		66E1E80C28F3FC8A00B1D57B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6644D77428E9819200DC6371 /* AppDelegate.swift */,
+				6644D77628E9819200DC6371 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		66E1E80D28F3FCAF00B1D57B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		66E1E80E28F3FCB700B1D57B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				66E1E80F28F3FCC800B1D57B /* Storyboard */,
+				6644D77D28E9819300DC6371 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		66E1E80F28F3FCC800B1D57B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6644D77F28E9819300DC6371 /* LaunchScreen.storyboard */,
+				6644D77A28E9819200DC6371 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		66E1E81028F3FCF800B1D57B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				66E1E81328F3FD2100B1D57B /* View */,
+				66E1E81128F3FD1C00B1D57B /* Cell */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		66E1E81128F3FD1C00B1D57B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		66E1E81328F3FD2100B1D57B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
